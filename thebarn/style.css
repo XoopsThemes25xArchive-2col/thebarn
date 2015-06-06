@@ -1,0 +1,333 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 2.0) - 22 mai 2007 */
+
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+
+* { margin: 0; padding: 0; border: none; outline: none; text-decoration: none;}
+
+html, body {
+	margin: 20px;
+	padding: 0;
+	background: #786E50 url(img/img1.gif);
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #3C3728;
+}
+table { width: 					100%;}
+table td {
+	padding: 						0;
+	border-width: 					0;
+	vertical-align: 				top;	
+}
+/* ======= encapsulage du thème dans le body ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {}
+body.theme-dialog #xo-canvas {
+	margin:							0 6px;
+}
+/*================= Zone de contenu ===================*/
+#xo-canvas-content {
+	width: 592px;
+	margin: 0 auto;
+	background: #786E50 url(img/img5.gif) repeat-y;
+	border: 4px solid #000000;
+}
+#xo-page {}
+#xo-canvas-rightcolumn {padding: .5em;}
+#xo-content {
+	clear:							both;
+	margin:							0;
+	padding:							.5em;
+}
+#xo-uptop {
+	margin: 							0;
+	padding-top: 					5px;
+	font-size: 						.9em;
+	text-align:						right;
+}
+#xo-uptop a {
+	color: 							#32529C;
+	background-color: 			transparent;
+}
+#xo-uptop a:hover {
+color: 								#EAAD7B;
+background-color: 				inherit;
+}
+#xo-logger-output { font-size:	.8em;}
+/* ============== header ================= */
+#xo-header {}
+#xo-top {
+	height: 							32px;
+	color: 							#333;
+	background-color:				#E2E2E2;
+}
+/* ---------- Bannières ---------- */
+#xo-banner {
+	width: 592px;
+	height: 112px;
+	margin: 0 auto;
+	background: url(img/img2.jpg);
+	border: 4px solid #000000;
+}
+
+#xo-banner h1 {
+	float: left;
+	padding: 40px 0 0 10px;
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #ACA283;
+}
+
+#xo-banner h2 {
+	float: right;
+	padding: 95px 5px 0 0;
+	font-size: 11px;
+}
+
+#xo-banner a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 11px;
+	color: #ACA283;
+}
+/*============== Styles pour l'include userbar.html =================*/
+#xo-userbar {
+	display:							block;
+	float: 							right;
+	padding-top: 					2px;
+	padding-right:					1em;
+	color:							#666;
+	background-color: 			transparent;
+}
+#xo-userbar form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar button {
+	margin: 							0 -3px;
+	padding:							0;
+	background:						transparent none;
+	border:							none;
+}
+#xo-userbar button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar img {
+	width: 							22px;
+	height: 							22px;
+}
+#xo-userbar input {
+	width: 							80px;
+	color:							#333;
+	background-color: 			#c6c7c9;
+}
+#xo-userbar input:hover {
+	color:							#333;
+	background-color: 			#DBDCDC;
+}
+#xo-userbar a {
+	color: 							#32529C;
+	background-color: 			inherit;
+	text-decoration:				none;
+}
+#xo-userbar a:hover {
+	color: 							#EAAD7B;
+	background-color: 			inherit;
+}
+#xo-uname {
+	color:							#32529C;
+	background-color:				transparent;
+	font-size:						1.1em;
+	font-weight:					bold;
+}
+/*============== Styles pour l'include searchbar.html =================*/
+#xo-searchbar {
+	display:							block;
+	float: 							left;
+	margin-top: 					5px;
+	margin-left : 					1em;
+}
+#xo-searchbar button {
+	margin-left: 					5px;
+	padding: 						0 2px 2px 2px;
+}
+#xo-searchbar input[type=text]{
+	color:							#333;
+	background-color: 			#c6c7c9;
+}
+#xo-searchbar input[type=text]:hover {
+	color:							#333;
+	background-color:				transparent;
+}
+/*------------------- Affichage des drapeaux de langues ----------------*/
+#xo-language {
+	display: 						block;
+	float:							left;
+	margin-top :					5px;
+	padding-left: 					1em;
+	color:							#666;
+	background-color: 			transparent;
+}
+#xo-language img{
+	width: 							22px;
+	height: 							22px;
+}
+/*============= Style pour l'include globalnav.html ================*/
+#xo-globalnav {
+	width: 600px;
+	height: 30px;
+	margin: 0 auto;
+}
+#xo-globalnav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#xo-globalnav li {
+	display: inline;
+}
+#xo-globalnav a {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 26px;
+	padding: 4px 0 0 0;
+	background: url(img/img3.gif);
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	color: #ACA283;
+}
+#xo-globalnav a:hover, #menu .active a {
+	background: url(img/img4.gif);
+	color: #FFFFFF;
+}
+/*=============== Affichage Pied de page - Footer  ====================*/
+#xo-footer {
+	width: 600px;
+	margin: 0 auto;
+	background: #000000;
+}
+
+#xo-footer p {
+	margin: 0;
+	padding: 0 0 4px 0;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 9px;
+	color: #3C3728;
+}
+
+#xo-footer a {
+	color: #786E50;
+}/*========== Menu principal dans bloc =============*/
+#mainmenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						1px;
+	font-weight: 					500;
+	border-bottom: 1px dotted #786E50;
+}
+#mainmenu a:hover {
+	text-decoration:				none !important;
+	color: #3C3728 !important;
+	background-color: #786E50 !important;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 8px; }
+#mainmenu a.menuSub {
+	padding-left: 					20px;
+	color:							#786E50;
+	background-color:				inherit;
+	font-size:						.8em;
+	font-style: 					italic;
+}
+#mainmenu a.menuSub:hover {
+	color:							#786E50;
+	background-color: 			inherit;
+}
+
+/*============ Menu utilisateur dans bloc ============*/
+#usermenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						2px;
+	color:							#32529C;
+	background-color: 			inherit;
+	font-weight: 					normal;
+	font-size: 						0.8em;
+	line-height: 					1em;
+}
+#usermenu a:hover {
+	padding-left: 					3em;
+	color:							#666;
+	background-color: 			inherit;
+	font-style: 					italic;
+	text-decoration:				none !important;
+	border-left:					1px solid #666;
+	border-bottom:					1px solid #666;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	color: 							#ccc;
+	background-color: 			#333;
+}
+
+/*=========== Règles nécessaires pour les anciens templates des modules ============*/
+#usermenu a, #mainmenu a {	display: block;}
+.xo-canvas-column .menuSub { padding-left: 1em;}
+
+
+/*============== Styles pour system_siteclosed.html =================*/
+#xo-siteclose {
+	margin:							50px;
+	padding:							30px;
+	width:							400px;
+	color:							#000;
+	background-color:				#e2e2e2;
+	border:							1px solid #7d7d7d;
+	font-size: 						1.2em;
+	font-weight: 					bold;
+}
+/*============== Styles pour system_redirect.html =================*/
+#xo-redirect {
+	width:							780px;
+	margin:							50px auto;
+	padding:							1em;
+	text-align:						center;
+	font-weight:					bold;
+}
+
+#xo-redirect .notreload {
+	padding-top:					2px;
+	height:							28px;
+	color:							#fff;
+	background-color:				inherit;
+}
+
+#xo-redirect .notreload a {
+	color:							#cc0000;
+	background-color: 			transparent;
+	font-weight:					bold;
+	text-decoration: 				none;
+}
+
+#xo-redirect .message {
+	padding:							1em;
+	min-height:						60px;
+	color:							#333;
+	background-color: 			#f3f3f3;
+	border:		 					solid 1px #546f90;
+	font-size:						1.2em;
+	text-align:						center;
+}
+#xo-redirect .message img{
+	padding:							1em;
+}
